@@ -26,7 +26,11 @@ PIP_PACKAGES=(
 # Can also be set via EXTENSIONS env var (semicolon-separated)
 # Example: EXTENSIONS="https://github.com/org/ext1;https://github.com/org/ext2"
 EXTENSIONS=(
-    #"https://github.com/example/extension-name"
+    "https://github.com/Bing-su/adetailer"
+    "https://github.com/butaixianran/Stable-Diffusion-Webui-Civitai-Helper"
+    "https://github.com/Physton/sd-webui-prompt-all-in-one"
+    "https://github.com/hako-mikan/sd-webui-regional-prompter"
+    "https://github.com/Haoming02/sd-forge-couple"
 )
 
 # Model downloads use "URL|OUTPUT_PATH" format
@@ -40,15 +44,12 @@ EXTENSIONS=(
 
 # HuggingFace models (requires HF_TOKEN for gated models)
 HF_MODELS_DEFAULT=(
-    "https://huggingface.co/RunDiffusion/Juggernaut-XI-v11/resolve/main/Juggernaut-XI-byRunDiffusion.safetensors
-    |/workspace/stable-diffusion-webui-forge/models/Stable-diffusion/Juggernaut-XI-byRunDiffusion.safetensors"
 )
 
 # CivitAI models (requires CIVITAI_TOKEN for some models)
 # Use trailing / for output path to use content-disposition filename
 CIVITAI_MODELS_DEFAULT=(
-    #"https://civitai.com/api/download/models/798204?type=Model&format=SafeTensor&size=full&fp=fp16
-    #|$MODELS_DIR/Stable-diffusion/"
+    "https://civitai.com/api/download/models/2514310?type=Model&format=SafeTensor&size=pruned&fp=fp16"
 )
 
 # Generic wget downloads (no auth)
